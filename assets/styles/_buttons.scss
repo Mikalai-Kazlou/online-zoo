@@ -1,0 +1,74 @@
+.rounded-button {
+  width: 298px;
+  height: 54px;
+
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 140%;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  background: linear-gradient(115deg, #F9804B 1.5%, #FE9013 100%);
+  border: none;
+  border-radius: 25px;
+
+  &:hover {
+    cursor: pointer;
+    background: #E47209;
+  }
+
+  &:active {
+    background: #4B9200;
+  }
+}
+
+.quadro-button {
+  width: 298px;
+  height: 54px;
+
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 140%;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  background: linear-gradient(115deg, #F9804B 1.5%, #FE9013 100%);
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background: #E47209;
+  }
+
+  &:active {
+    background: #4B9200;
+  }
+}
+
+.round-button {
+  width: 62px;
+  height: 62px;
+
+  background: linear-gradient(115deg, #F9804B 1.5%, #FE9013 100%);
+  border: none;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+    background: #E47209;
+  }
+
+  &:active {
+    background: #4B9200;
+  }
+
+  &.disabled {
+    cursor: auto;
+    background: #828282;
+  }
+}

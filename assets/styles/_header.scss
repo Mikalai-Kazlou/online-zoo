@@ -1,0 +1,287 @@
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+
+  width: 100%;
+
+  background: #000000;
+  transition: all 0.5s linear;
+
+  @media screen and (max-width: 980px) {
+    position: fixed;
+  }
+}
+
+.logo {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  width: 82px;
+  height: 52px;
+
+  padding: 3.55px 4.75px;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+
+.logo-header {
+  margin: 14px 0;
+
+  @media screen and (max-width: 980px) {
+    width: 47px;
+    height: 29px;
+
+    margin: 2.5px 0;
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.logo-footer {
+  @media screen and (max-width: 620px) {
+    width: 47px;
+    height: 29px;
+
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.logo-image {
+  position: absolute;
+  left: 10px;
+  bottom: 6px;
+}
+
+.logo-header .logo-image {
+  @media screen and (max-width: 980px) {
+    left: 4px;
+    bottom: 3px;
+
+    width: 7.5px;
+    height: 14px;
+  }
+}
+
+.logo-footer .logo-image {
+  @media screen and (max-width: 620px) {
+    left: 73px;
+    bottom: 11px;
+  }
+}
+
+.logo-link {
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.logo-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 120%;
+
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.logo-header .logo-text {
+  @media screen and (max-width: 980px) {
+    font-size: 12px;
+  }
+}
+
+.burger-icon {
+  display: none;
+
+  width: 18px;
+  height: 10px;
+
+  background-image: url("../../assets/icons/burger-menu.svg");
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 980px) {
+    display: block;
+  }
+}
+
+.slide-top {
+  transform: translate(0, -100%);
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1440px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (max-width: 980px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 620px) {
+    padding: 0 10px;
+  }
+}
+
+.burger-menu {
+  flex-direction: column;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: 10px 10px 25px;
+
+  background: #FFFFFF;
+
+  .logo-text {
+    font-size: 15px;
+    color: #FE9013;
+  }
+
+  .logo-header {
+    width: 66px;
+    height: 42px;
+
+    padding: 2.85px 3.8px;
+
+    border: 0.8px solid #FE9013;
+  }
+
+  .navigation-top {
+    display: block;
+    margin: 30px 0 0;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 0;
+  }
+
+  .navigation-link {
+    display: block;
+
+    margin: 0 0 15px;
+
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    color: #333B41;
+  }
+
+  .link-active {
+    color: #F9804B;
+  }
+
+  .navigation-designed-by {
+    margin: 0;
+  }
+
+  .burger-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 14px;
+    height: 14px;
+
+    margin: 10px;
+
+    background-image: url("../../assets/icons/x-burger-icon.svg");
+  }
+}
+
+.navigation-top {
+  flex-grow: 1;
+  margin: 0 0 0 63px;
+
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 472px;
+  padding: 0px;
+
+  list-style: none;
+
+  @media screen and (max-width: 1440px) {
+    width: 431px;
+  }
+}
+
+.navigation-link {
+  text-decoration: none;
+  user-select: none;
+
+  font-size: 1em;
+  font-weight: 500;
+  color: #FFFFFF;
+
+  &:hover {
+    cursor: pointer;
+    color: #F9804B;
+  }
+}
+
+.navigation-designed-by {
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+}
+
+.link-active {
+  color: #F9804B;
+
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.dark-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.3) 50%, rgba(0, 0, 0, 1) 100%);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
